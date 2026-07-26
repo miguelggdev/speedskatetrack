@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react-swc';
 
 export default defineConfig(({ mode }) => ({
-  base: mode === 'production' ? '/speedskatetrack-landing/' : '/',
+  base: mode === 'production' ? '/speedskatetrack/' : '/',
   plugins: [react()],
   server: {
     port: 3000,
