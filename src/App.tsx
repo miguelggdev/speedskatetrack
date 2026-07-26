@@ -8,6 +8,7 @@ import AppPreview from './components/AppPreview';
 import CoachSection from './components/CoachSection';
 import AISimple from './components/AISimple';
 import AutoSimple from './components/AutoSimple';
+import ForEachRole from './components/ForEachRole';
 import BeforeAfter from './components/BeforeAfter';
 import Testimonials from './components/Testimonials';
 import PricingSimple from './components/PricingSimple';
@@ -30,6 +31,7 @@ export default function App() {
       <CoachSection />
       <AISimple />
       <AutoSimple />
+      <ForEachRole />
       <BeforeAfter />
       <Testimonials />
       <PricingSimple />
