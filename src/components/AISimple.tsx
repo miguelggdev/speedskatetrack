@@ -44,9 +44,9 @@ export default function AISimple() {
           {/* Left: explanation */}
           <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}
             transition={{ duration: 0.6 }} className="space-y-8">
-            <div className="space-y-4">
-              <span className="text-violet-400 text-sm font-bold uppercase tracking-widest">Tu asistente inteligente 24/7</span>
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-tight">
+            <div className="space-y-5">
+              <span className="section-label section-label-violet">🤖 Tu asistente inteligente 24/7</span>
+              <h2 className="heading-xl text-white">
                 Pregúntale cualquier cosa sobre tu club.{' '}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-pink-300">
                   Te responde en segundos.
@@ -62,7 +62,7 @@ export default function AISimple() {
               <p className="text-slate-400 text-sm font-semibold uppercase tracking-wide">¿Qué puede hacer?</p>
               <div className="grid grid-cols-2 gap-3">
                 {useCases.map((u) => (
-                  <div key={u.label} className="flex items-center gap-2.5 p-3 rounded-xl border border-white/8 bg-white/4">
+                  <div key={u.label} className="flex items-center gap-2.5 p-3 rounded-xl border border-white/8 bg-white/[0.03] hover:border-white/15 hover:bg-white/[0.06] transition-all duration-200">
                     <span className="text-xl">{u.emoji}</span>
                     <span className="text-slate-300 text-sm font-medium">{u.label}</span>
                   </div>

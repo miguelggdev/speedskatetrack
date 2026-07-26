@@ -19,10 +19,12 @@ export default function BeforeAfter() {
       <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
           transition={{ duration: 0.6 }} className="text-center mb-14 space-y-4">
-          <span className="text-emerald-400 text-sm font-bold uppercase tracking-widest">La diferencia es brutal</span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white">
+          <div className="flex justify-center">
+            <span className="section-label section-label-emerald">⚡ La diferencia es brutal</span>
+          </div>
+          <h2 className="heading-xl text-white">
             Antes vs{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-300">Después</span>
+            <span className="gradient-text-emerald">Después</span>
           </h2>
           <p className="text-slate-400 text-lg max-w-xl mx-auto">
             Esta es la diferencia real entre gestionar con SpeedSkateTrack y seguir haciendo todo a mano.

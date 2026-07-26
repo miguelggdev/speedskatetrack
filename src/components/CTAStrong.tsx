@@ -32,8 +32,11 @@ export default function CTAStrong() {
             <motion.div key="form" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
               {/* Urgency */}
               <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-950/60 border border-orange-500/40 text-orange-300 text-sm font-semibold mb-8 backdrop-blur-sm">
-                <span className="w-2 h-2 rounded-full bg-orange-400 animate-pulse" />
+                className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full bg-orange-500/15 border border-orange-500/40 text-orange-300 text-sm font-bold mb-8 backdrop-blur-sm shadow-lg shadow-orange-500/10">
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-orange-400 opacity-75" />
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-orange-400" />
+                </span>
                 Solo quedan 3 cupos de onboarding esta semana
               </motion.div>
 
@@ -74,11 +77,13 @@ export default function CTAStrong() {
 
               {/* Guarantees */}
               <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5 }}
-                className="flex flex-wrap justify-center gap-5 text-slate-400 text-sm mb-8">
-                <span>✅ Sin tarjeta de crédito</span>
-                <span>✅ Configuras en 1 día</span>
-                <span>✅ Garantía 30 días</span>
-                <span>✅ Cancela cuando quieras</span>
+                className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-slate-400 text-sm mb-8">
+                {['Sin tarjeta de crédito', 'Configuras en 1 día', 'Garantía 30 días', 'Cancela cuando quieras'].map((t) => (
+                  <span key={t} className="flex items-center gap-1.5">
+                    <span className="w-4 h-4 rounded-full bg-emerald-500/20 text-emerald-400 text-[10px] flex items-center justify-center font-bold flex-shrink-0">✓</span>
+                    {t}
+                  </span>
+                ))}
               </motion.div>
 
               {/* Trust logos */}

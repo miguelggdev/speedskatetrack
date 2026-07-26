@@ -3,17 +3,17 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 
 const photos = [
   {
-    src: '/images/skate/race-mass-start.jpg',
+    src: 'images/skate/race-mass-start.jpg',
     caption: 'Salida en masa — categoría juvenil',
     country: '🇫🇷 Francia',
   },
   {
-    src: '/images/skate/race-pack.jpg',
+    src: 'images/skate/race-pack.jpg',
     caption: 'Pelea por posiciones en la recta',
     country: '🇫🇷 Occitanie Open',
   },
   {
-    src: '/images/skate/race-latam.jpg',
+    src: 'images/skate/race-latam.jpg',
     caption: 'Competencia nacional categoría damas',
     country: '🇨🇴 Colombia',
   },

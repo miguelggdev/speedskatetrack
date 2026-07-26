@@ -265,10 +265,12 @@ export default function AppPreview() {
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }} transition={{ duration: 0.6 }}
           className="text-center mb-14 space-y-4">
-          <span className="text-blue-400 text-sm font-bold uppercase tracking-widest">Ve el producto real</span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white">
+          <div className="flex justify-center">
+            <span className="section-label section-label-blue">💻 Ve el producto real</span>
+          </div>
+          <h2 className="heading-xl text-white">
             Así se ve SpeedSkateTrack{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">por dentro</span>
+            <span className="gradient-text-blue">por dentro</span>
           </h2>
           <p className="text-slate-400 text-lg max-w-2xl mx-auto">
             Cada rol tiene su vista. El director ve el negocio, el entrenador ve sus atletas, el atleta ve su progreso.

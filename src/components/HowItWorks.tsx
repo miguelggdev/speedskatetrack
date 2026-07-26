@@ -112,10 +112,12 @@ export default function HowItWorks() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
           transition={{ duration: 0.6 }} className="text-center mb-16 space-y-4">
-          <span className="text-blue-400 text-sm font-bold uppercase tracking-widest">Simple como debe ser</span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white">
+          <div className="flex justify-center">
+            <span className="section-label section-label-blue">🚀 Simple como debe ser</span>
+          </div>
+          <h2 className="heading-xl text-white">
             Empiezas en 3 pasos.{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">Sin conocimientos técnicos.</span>
+            <span className="gradient-text-blue">Sin conocimientos técnicos.</span>
           </h2>
           <p className="text-slate-400 text-lg max-w-2xl mx-auto">
             No necesitas saber de tecnología. Si sabes gestionar un club, sabes usar SpeedSkateTrack.

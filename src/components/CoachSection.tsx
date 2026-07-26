@@ -70,12 +70,12 @@ export default function CoachSection() {
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }} transition={{ duration: 0.6 }}
           className="text-center mb-14 space-y-4">
-          <span className="text-orange-400 text-sm font-bold uppercase tracking-widest">Para cada rol del club</span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white">
+          <div className="flex justify-center">
+            <span className="section-label section-label-orange">👥 Para cada rol del club</span>
+          </div>
+          <h2 className="heading-xl text-white">
             Diseñado para{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-amber-300">
-              todos en el club
-            </span>
+            <span className="gradient-text-orange">todos en el club</span>
           </h2>
           <p className="text-slate-400 text-lg max-w-2xl mx-auto">
             SpeedSkateTrack no es solo para el director. El entrenador, los padres y los atletas tienen su propia experiencia.

@@ -46,10 +46,12 @@ export default function FAQSection() {
       <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
           transition={{ duration: 0.6 }} className="text-center mb-14 space-y-4">
-          <span className="text-blue-400 text-sm font-bold uppercase tracking-widest">Preguntas frecuentes</span>
-          <h2 className="text-3xl sm:text-4xl font-black text-white">
+          <div className="flex justify-center">
+            <span className="section-label section-label-blue">❓ Preguntas frecuentes</span>
+          </div>
+          <h2 className="heading-xl text-white">
             Resolvemos tus dudas{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">antes de empezar</span>
+            <span className="gradient-text-blue">antes de empezar</span>
           </h2>
         </motion.div>
 
@@ -60,13 +62,17 @@ export default function FAQSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.05, duration: 0.4 }}
-              className="rounded-2xl border border-white/8 bg-white/4 overflow-hidden"
+              className={`rounded-2xl border overflow-hidden transition-colors duration-200 ${
+                open === i ? 'border-blue-500/30 bg-blue-950/10' : 'border-white/8 bg-white/[0.03] hover:border-white/15 hover:bg-white/[0.05]'
+              }`}
             >
               <button className="w-full flex items-center justify-between gap-4 px-6 py-5 text-left"
                 onClick={() => setOpen(open === i ? null : i)}>
-                <span className="text-white font-semibold text-base leading-snug">{faq.q}</span>
+                <span className={`font-semibold text-base leading-snug transition-colors ${open === i ? 'text-white' : 'text-slate-200'}`}>{faq.q}</span>
                 <motion.span animate={{ rotate: open === i ? 45 : 0 }} transition={{ duration: 0.2 }}
-                  className="flex-shrink-0 w-7 h-7 rounded-full border border-white/15 flex items-center justify-center text-slate-400 text-lg font-light">
+                  className={`flex-shrink-0 w-7 h-7 rounded-full border flex items-center justify-center text-lg font-light transition-colors ${
+                    open === i ? 'border-blue-500/50 text-blue-400' : 'border-white/15 text-slate-400'
+                  }`}>
                   +
                 </motion.span>
               </button>

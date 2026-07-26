@@ -49,12 +49,12 @@ export default function AutoSimple() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
           transition={{ duration: 0.6 }} className="text-center mb-16 space-y-4">
-          <span className="text-orange-400 text-sm font-bold uppercase tracking-widest">Funciona solo</span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white">
+          <div className="flex justify-center">
+            <span className="section-label section-label-orange">⚙️ Funciona solo</span>
+          </div>
+          <h2 className="heading-xl text-white">
             Estas cosas pasan{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-amber-300">
-              sin que hagas nada
-            </span>
+            <span className="gradient-text-orange">sin que hagas nada</span>
           </h2>
           <p className="text-slate-400 text-lg max-w-2xl mx-auto">
             Haz clic en cada situación para ver qué hace el sistema — y cuánto tiempo te ahorra.
@@ -68,7 +68,7 @@ export default function AutoSimple() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.08, duration: 0.5 }}
-              className="rounded-2xl border border-white/8 bg-white/4 overflow-hidden cursor-pointer"
+              className="rounded-2xl border border-white/8 bg-white/[0.03] overflow-hidden cursor-pointer hover:border-white/15 hover:bg-white/[0.05] transition-colors duration-200"
               onClick={() => setActive(active === i ? null : i)}
             >
               <div className="flex items-center gap-4 p-5">
