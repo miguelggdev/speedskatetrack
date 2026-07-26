@@ -36,7 +36,7 @@ function AthleteCardPreview() {
       {/* Real athlete card image */}
       <div className="relative w-48 mx-auto rounded-2xl overflow-hidden shadow-2xl shadow-black/60 rotate-3 hover:rotate-0 transition-transform duration-500">
         <img
-          src="/images/skate/athlete-card.jpg"
+          src="images/skate/athlete-card.jpg"
           alt="Carnet digital de atleta"
           className="w-full h-auto object-cover"
         />
@@ -88,7 +88,7 @@ function DashboardPreview() {
 function RacePhotoMini() {
   return (
     <div className="relative w-full max-w-[200px] mx-auto h-32 rounded-2xl overflow-hidden shadow-2xl">
-      <img src="/images/skate/race-mass-start.jpg" alt="Competencia" className="w-full h-full object-cover" />
+      <img src="images/skate/race-mass-start.jpg" alt="Competencia" className="w-full h-full object-cover" />
       <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
       <div className="absolute bottom-2 left-3">
         <div className="text-white text-xs font-black">+24 clubes creciendo</div>

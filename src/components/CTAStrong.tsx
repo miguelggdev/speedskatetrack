@@ -18,7 +18,7 @@ export default function CTAStrong() {
       {/* Real race photo background */}
       <div className="absolute inset-0">
         <img
-          src="/images/skate/race-mass-start.jpg"
+          src="images/skate/race-mass-start.jpg"
           alt=""
           className="w-full h-full object-cover object-center opacity-20"
         />

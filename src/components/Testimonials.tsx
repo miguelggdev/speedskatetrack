@@ -57,7 +57,7 @@ export default function Testimonials() {
       {/* Race photo as atmospheric background */}
       <div className="absolute inset-0">
         <img
-          src="/images/skate/race-latam.jpg"
+          src="images/skate/race-latam.jpg"
           alt=""
           className="w-full h-full object-cover object-center opacity-15"
         />
@@ -124,7 +124,7 @@ export default function Testimonials() {
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.2 }}
           className="mt-14 rounded-2xl overflow-hidden border border-white/8 relative h-40">
-          <img src="/images/skate/race-pack.jpg" alt="Competencia" className="w-full h-full object-cover object-top opacity-40" />
+          <img src="images/skate/race-pack.jpg" alt="Competencia" className="w-full h-full object-cover object-top opacity-40" />
           <div className="absolute inset-0 bg-gradient-to-r from-[#080c16] via-transparent to-[#080c16]" />
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-16 text-center px-8">

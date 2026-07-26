@@ -126,7 +126,7 @@ export default function Hero2() {
             {/* Main photo */}
             <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-black/60">
               <img
-                src="/images/skate/race-pack.jpg"
+                src="images/skate/race-pack.jpg"
                 alt="Competencia de patinaje de velocidad"
                 className="w-full h-[520px] object-cover object-center"
               />
@@ -159,7 +159,7 @@ export default function Hero2() {
               transition={{ delay: 1, duration: 0.5 }}
               className="absolute -bottom-8 -left-8 w-52 h-36 rounded-2xl overflow-hidden shadow-2xl shadow-black/60 border-2 border-white/10"
             >
-              <img src="/images/skate/race-latam.jpg" alt="Club latinoamericano" className="w-full h-full object-cover" />
+              <img src="images/skate/race-latam.jpg" alt="Club latinoamericano" className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               <div className="absolute bottom-2 left-3">
                 <div className="text-white text-xs font-bold">Club Latinoamérica</div>
